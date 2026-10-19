@@ -1,0 +1,1 @@
+Katalog proizvoda prikazuje sliku, cjenu i opis 8 različitih proizvoda. Kada kliknemo na Pogledaj proizvod otvorit će se stranica na kojoj se nalazi taj proizvod. Svojstva proizvoda su id, naziv, cijena, kategorija, slika i poveznica

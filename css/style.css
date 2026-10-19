@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #345896;
+}
+
+.zaglavlje {
+  padding: 40px 6%;
+  background: #033181;
+  color: white;
+}
+
+.zaglavlje h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+#brojac {
+  color: #fcb832;
+}
+
+main {
+  width: min(1200px, 92%);
+  margin: 35px auto;
+}
+
+.katalog {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 230px), 1fr)
+  );
+  gap: 24px;
+}
+
+.kartica {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: white;
+  border: 2px solid #dfe4ec;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #17243b12;
+}
+
+.kartica img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 9px;
+  background: #e9edf3;
+}
+
+.kategorija {
+  margin: 16px 0 5px;
+  color: #526783;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.kartica h2 {
+  min-height: 48px;
+  font-size: 1.2rem;
+}
+
+.cijena {
+  color: #208f5d;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.kartica.skuplji {
+  border-color: #f7a71d;
+  background: #f7eedc;
+}
+
+.kartica.standardni {
+  border-color: #dfe4ec;
+}
+
+.kartica a {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: #253858;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kartica a:hover {
+  background: #3d5783;
+}
+
+#prazno-stanje {
+  padding: 35px;
+  background: white;
+  border: 1px dashed #9aa8bb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#prazno-stanje[hidden] {
+  display: none;
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  color: #657187;
+}
+
+@media (max-width: 600px) {
+  .zaglavlje h1 {
+    font-size: 2rem;
+  }
+
+  .zaglavlje {
+    padding: 28px 5%;
+  }
+}
